@@ -1,2 +1,2 @@
 # portfolio2
-Portfolio2
+I built this project from scratch.
