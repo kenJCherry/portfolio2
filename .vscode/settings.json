@@ -1,0 +1,4 @@
+{
+    "appService.deploySubpath": "",
+    "appService.defaultWebAppToDeploy": "/subscriptions/db99d521-6408-4356-aee6-05ead7e97e66/resourceGroups/kenCherryPortfolio/providers/Microsoft.Web/sites/kenCherryPortfolio"
+}
