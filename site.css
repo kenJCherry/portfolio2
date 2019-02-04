@@ -2,6 +2,7 @@
   /* The image used */
   background-image: url("images/banner7.jpg");
 
+
   /* Set a specific height */
   min-height: auto;
 
@@ -11,7 +12,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/*Text*/
 p, #name, .contact-number, .title{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -19,6 +20,7 @@ p, #name, .contact-number, .title{
 #home, #projects{
     min-height: 950px;
 }
+
 div.social-media{
     margin-left: 5%;
     margin-top: 10px;
@@ -33,7 +35,7 @@ div.contact-number{
     opacity: 0;
 }
 
-.contact-number, p, .box, .box .box-social-media, a h2{
+.contact-number, .box, .box .box-social-media, a h2{
     text-align: center;
     color: white;
 }
@@ -55,7 +57,7 @@ div.contact-number{
 }
 
 /*Creates box for .title, h2, .social-media*/
-.boxed{
+.boxed {
     width: auto;
     height: 300px;
     /*margin-top: 100px;*/
@@ -66,11 +68,14 @@ div.contact-number{
             )
 }
 
-#projects{
+#projects {
     background-color: black;
 }
+#projects .row {
+    margin-top: 60px;
+}
 
-#trans-title{
+#trans-title {
     color: white;
     text-align: center;
     margin-left: 450px;
@@ -80,14 +85,51 @@ div.contact-number{
 
 }
 
-.col-md-8 p{
-    font-size: 1.5em;
-    text-align: left;
-    padding-top: 30px;
+/*Project Images*/
+figure img {
+    margin-left: 50%;
 }
 
+.img-two {
+    margin-left: 0%;
+    margin-right: 100%;
+}
 
+figcaption {
+    color: white;
 
-body{
+}
 
+p {
+    color: white;
+}
+
+/*Project text*/
+.col-md-8 p {
+    font-size: 1.5em;
+    text-align: left;
+}
+/*First and Third project text*/
+#pro-text-one p {
+    padding-right: 30%;
+}
+/*Second Project text*/
+#pro-text-two p {
+    padding-left: 30%;
+    margin-top: 20px;;
+}
+
+#pro-text-three p {
+    padding-right: 30%;
+    margin-top: 30px;
+}
+
+footer{
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
 }
