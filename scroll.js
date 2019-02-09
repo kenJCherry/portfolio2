@@ -1,51 +1,26 @@
-$(document).on("scroll", function () {
-    var scrollTop = $(document).scrollTop()
-    var scrollBottom = scrollTop + $(window).height()
-
-    var pageBottom = $(document).height()
-
-    var diff = pageBottom - scrollBottom
-
-    var opacity = 1 - diff / 1000
-
-    $("div.social-media").css("opacity", opacity)
-})
+var sections = [".title-projects", ".social-media-projects", "#projects" ]
 
 $(document).on("scroll", function () {
-    var scrollTop = $(document).scrollTop()
-    var scrollBottom = scrollTop + $(window).height()
+    var width = $(window).width();
+        if (width > 769) {
 
-    var pageBottom = $(document).height()
+          for (var i = 0; i < sections.length; i++) {
+                var scrollTop = $(document).scrollTop()
+                var scrollBottom = scrollTop + $(window).height()
 
-    var diff = pageBottom - scrollBottom
+                var pageBottom = $(document).height()
 
-    var opacity = 1 - diff / 1000
+                var diff = (pageBottom - scrollBottom)
 
-    $("div.contact-number").css("opacity", opacity)
-})
+                var opacity = 1 - diff / 1000
 
-$(document).on("scroll", function () {
-    var scrollTop = $(document).scrollTop()
-    var scrollBottom = scrollTop + $(window).height()
-
-    var pageBottom = $(document).height()
-
-    var diff = pageBottom - scrollBottom
-
-    var opacity = 1 - diff / 1000
-
-    $("#trans-title").css("opacity", opacity)
-})
-
-$(document).on("scroll", function () {
-    var scrollTop = $(document).scrollTop()
-    var scrollBottom = scrollTop + $(window).height()
-
-    var pageBottom = $(document).height()
-
-    var diff = pageBottom - scrollBottom
-
-    var opacity = 1 - diff / 1000
-
-    $("#projects").css("opacity", opacity)
+                $(sections[i]).css("opacity", opacity)
+          }/*End for*/
+    } else {
+        var opacity = 1
+        for (var i = 0; i < sections.length; i++) {
+            $(sections[i]).css("opacity", opacity)
+        }/*End for*/
+        
+    } /*End else*/ 
 })

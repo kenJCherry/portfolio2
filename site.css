@@ -1,135 +1,168 @@
 .parallax {
-  /* The image used */
-  background-image: url("images/banner7.jpg");
-
-
-  /* Set a specific height */
-  min-height: auto;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-/*Text*/
-p, #name, .contact-number, .title{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#home, #projects{
+    /* The image used */
+    background-image: url("images/banner7.jpg");
+  
+    /* Set a specific height */
     min-height: 950px;
-}
-
-div.social-media{
-    margin-left: 5%;
-    margin-top: 10px;
-    opacity: 0;
-}
-
-.fa git-hub{
-    color: grey;
-}
-div.contact-number{
-    margin-top: 10px;
-    opacity: 0;
-}
-
-.contact-number, .box, .box .box-social-media, a h2{
-    text-align: center;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /**/
+  .title p, .col-md-3 .contact-number h1, .title-projects, .contact-number-projects h2{
     color: white;
-}
-/*Contents of .box: .title, h2, .social-media*/
-.box{
-    position: relative;
-    top: 45%;
-}
-
-.box h1, .box h2{
-    margin-bottom: 50px;
-}
-.box h1{
-    margin-top: 50px;
-}
-/*.social-media fixed upper-left*/
-.col-md-3 .social-media, .col-md-3 .contact-number{
-    position: fixed;
-}
-
-/*Creates box for .title, h2, .social-media*/
-.boxed {
+    text-align: center;
+  }
+  
+  .title p{
+    font-size: 4em;
+    margin-top: 300px;
+    margin-bottom: 0;
+    position: relative; 
+    padding-top: 80px;
+  }
+  
+  .title p, .contact-number, .title-projects, .contact-number-projects, p, footer{
+    font-family: Open sans-serif, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .boxed {
     width: auto;
     height: 300px;
-    /*margin-top: 100px;*/
+    z-index: -1;
     background:
         linear-gradient(
             rgba(0, 0, 0, 0.6),
             rgba(0, 0, 0, 0.6)
             )
-}
-
-#projects {
+  }
+  
+  /*Projects section*/
+  .projects-section{
     background-color: black;
-}
-#projects .row {
-    margin-top: 60px;
-}
-
-#trans-title {
-    color: white;
-    text-align: center;
-    margin-left: 450px;
-    margin-bottom: 100px;
-    opacity: 0;
-    padding-top: 50px;
-
-}
-
-/*Project Images*/
-figure img {
+    min-height: 950px;
+  }
+  
+  .title-projects {
+    margin-top: 25px;
+  }
+  
+  .title-projects.visible, #projects.visible {
+    opacity: 1;
+  }
+  
+  .social-media-projects.visible {
+    opacity: 1;
+  }
+  
+  .contact-number-projects, .social-media-projects {
+    margin-top: 30px;
+  }
+  
+  .social-media-projects, .social-media {
+    margin-left: 35%;
+  }
+  
+  #projects {
+    margin-top: 100px;
+  }
+  
+  #projects .col-md-12 {
+    margin-top: 50px;
+    padding-left: 5%;
+  }
+  
+  /*Project Images*/
+  figure img {
     margin-left: 50%;
-}
-
-.img-two {
+  }
+  
+  .img-one {
+    margin-top: 15px;
+  }
+  
+  .img-two {
     margin-left: 0%;
     margin-right: 100%;
-}
-
-figcaption {
+  }
+  
+  figcaption {
     color: white;
-
-}
-
-p {
+  
+  }
+  
+  p {
     color: white;
-}
-
-/*Project text*/
-.col-md-8 p {
+  }
+  
+  /*Projects text*/
+  .col-md-8 p {
     font-size: 1.5em;
     text-align: left;
-}
-/*First and Third project text*/
-#pro-text-one p {
+  }
+  
+  /*First project text*/
+  #pro-text-one p {
     padding-right: 30%;
-}
-/*Second Project text*/
-#pro-text-two p {
+  }
+  
+  /*Second Project text*/
+  #pro-text-two p {
     padding-left: 30%;
     margin-top: 20px;;
-}
-
-#pro-text-three p {
+  }
+  
+  #pro-text-three p {
     padding-right: 30%;
     margin-top: 30px;
-}
-
-footer{
+  }
+  
+  footer {
     color: white;
-    position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
-    background-color: black;
+    width: 100%; 
     text-align: center;
-}
+    margin-top: 100px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .social-media{
+      margin-left: 20%;
+    }
+  
+    .social-media-projects {
+      margin-left: 30%;
+    }
+  
+    .title p {
+      font-size: 4em;
+      margin-top: 300px;
+      margin-bottom: 0;
+      position: relative; 
+      padding-top: 20px;
+    }
+  
+    .parallax {
+      height: auto;
+    }
+  
+    .img-one, .img-three {
+      margin-right: 60%;
+    }
+  
+    #pro-text-one p, #pro-text-three p {
+      padding-right: 0%;
+    }
+  
+    .img-two {
+      margin-left: 20%;
+    }
+  
+    #pro-text-two p {
+      padding-left: 0%;
+    }
+  }
