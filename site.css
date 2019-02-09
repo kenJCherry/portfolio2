@@ -130,7 +130,14 @@
   
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    .social-media{
+    .parallax {
+      background-image: url("images/banner7.jpg");
+      width: 100vw;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+    .social-media {
       margin-left: 20%;
     }
   
