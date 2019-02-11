@@ -79,14 +79,14 @@
     margin-left: 50%;
   }
   
-  .img-one {
+  .img-one, .img-two {
     margin-top: 15px;
   }
-  
+  /*
   .img-two {
     margin-left: 0%;
     margin-right: 100%;
-  }
+  }*/
   
   figcaption {
     color: white;
@@ -109,12 +109,13 @@
   }
   
   /*Second Project text*/
+  /*
   #pro-text-two p {
     padding-left: 30%;
     margin-top: 20px;;
-  }
+  }*/
   
-  #pro-text-three p {
+  #pro-text-three p, #pro-text-two p {
     padding-right: 30%;
     margin-top: 30px;
   }
@@ -130,13 +131,7 @@
   
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    .parallax {
-      background-image: url("images/banner7.jpg");
-      width: 100vw;
-      height: 100vh;
-      background-size: cover;
-      background-position: center;
-    }
+   
     .social-media {
       margin-left: 20%;
     }
@@ -157,16 +152,12 @@
       height: auto;
     }
   
-    .img-one, .img-three {
+    .img-one, .img-two, .img-three {
       margin-right: 60%;
     }
   
-    #pro-text-one p, #pro-text-three p {
+    #pro-text-one p, #pro-text-three p, #pro-text-two {
       padding-right: 0%;
-    }
-  
-    .img-two {
-      margin-left: 20%;
     }
   
     #pro-text-two p {
